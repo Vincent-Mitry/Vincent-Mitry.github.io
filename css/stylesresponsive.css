@@ -19,6 +19,7 @@ html {
 
 .right-content {
     padding: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .left-content {
@@ -61,6 +62,10 @@ section {
 
 .entry__description {
     width: 70%;
+}
+
+footer {
+    text-align: right;
 }
 
 /*------------------------------------------*/
@@ -127,11 +132,15 @@ label {
     text-align: left;
 }
 
+footer i {
+    font-size: 0.8rem;
+}
+
 /*------------------------------------------*/
 /*          MEDIA QUERIES RESPONSIVE        */     
 /*------------------------------------------*/
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     
     h1 {
         font-size: 2.5rem;
