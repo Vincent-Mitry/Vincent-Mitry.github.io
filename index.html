@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Vincent Mitry</title>
     <link rel="stylesheet" href="css/reboot.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesresponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -17,24 +18,32 @@
                     <img src="media/photo-profil.jpg" alt="photo de profil" >
                 </div>
             </section>
-            <section>
+            <section id="contact">
                 <h2>à propos</h2>
                 <ul>
-                    <li>+33 6 75 70 86 33</li>
-                    <li>vinz.mitry@gmail.com</li>
-                    <li><a href="#">linkedin</a></li>
-                    <li>19 rue Félicien David - 78100 - St Germain En Laye</li>
+                    <li><i class="fa fa-phone"></i> +33 6 75 70 86 33</li>
+                    <li><i class="fas fa-at"></i> vinz.mitry@gmail.com</li>
+                    <li><a href="https://fr.linkedin.com/in/vincent-mitry-58ba791b5" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> Vincent Mitry</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> 19 rue Félicien David - 78100 - St Germain En Laye</li>
                 </ul>
             </section>
             <section>
                 <h2>Compétences</h2>
                 <div class="skill">
-                    <label for="file">Skill</label>
-                    <progress id="file" max="100" value="70"></progress>
+                    <label for="html-css">HTML, CSS</label>
+                    <progress id="html-css" max="100" value="70"></progress>
                 </div>
                 <div class="skill">
-                    <label for="file2">Skill</label>
-                    <progress id="file2" max="100" value="50"></progress>
+                    <label for="php">PHP</label>
+                    <progress id="php" max="100" value="60"></progress>
+                </div>
+                <div class="skill">
+                    <label for="js">Javascript</label>
+                    <progress id="js" max="100" value="50"></progress>
+                </div>
+                <div class="skill">
+                    <label for="sql">SQL</label>
+                    <progress id="sql" max="100" value="50"></progress>
                 </div>
             </section>
             <section>
@@ -45,11 +54,11 @@
                 </div>
                 <div class="skill">
                     <label for="english">Anglais</label>
-                    <progress id="english" max="100" value="85"></progress>
+                    <progress id="english" max="100" value="90"></progress>
                 </div>
                 <div class="skill">
                     <label for="spanish">Espagnol</label>
-                    <progress id="spanish" max="100" value="90"></progress>
+                    <progress id="spanish" max="100" value="95"></progress>
                 </div>
             </section>
             <section>
@@ -76,35 +85,43 @@
         <div class="right-content">
             <header>
                 <h1>Vincent Mitry</h1>
-                <p>Objectif: Dans le cadre d'une reconversion, je recherche un stage de 3 mois (420h minimum) en tant que <strong>Développeur Web</strong>.</p>
+                <p>Objectif: Dans le cadre d'une reconversion, je recherche un stage de 3 à 6 mois (420h minimum) en tant que <strong>Développeur Web</strong>.</p>
             </header>
             <main>
                 <section>
                     <h2>Profile</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis inventore quasi, voluptate expedita quibusdam modi eaque quos soluta quaerat, in recusandae tenetur esse totam earum assumenda ut minus nemo alias.
-                    Quisquam similique quaerat commodi eaque aperiam debitis nisi doloremque distinctio tenetur esse, molestiae, ut, consectetur blanditiis rem quod temporibus eum nobis culpa ipsum molestias nihil autem necessitatibus quae! Eos, omnis.</p>
+                    <p>La formation "Socle développement web" chez O'Clock m'a fourni les bases de la programmation web. Afin de mettre en pratique mes nouvelles connaisances en front-end (HTML, CSS et Javascript) et en back-end (PHP et SQL), je recherche un stage en entreprise. A l'issue du stage, je me présenterai au passage du titre professionnel RNCP "Développeur Web et Web Mobile". Depuis la fin de ma formation, je continue à me former en autodidacte en travaillant sur divers projets web et en apprenant des nouvelles technologies comme Symfony. </p>
                 </section>
 
                 <section>
                     <h2>Formation</h2>
                     <div class="entry">
                         <div class="entry__title">
-                            <h3>Organisme de Formation</h3>
-                            <p>Date</p>
+                            <h3>O'Clock</h3>
+                            <p>Mai - Aout 2021</p>
                         </div>
                         <div class="entry__description">
-                            <h3>Diplôme/Intitulé Formation</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, tempore cupiditate fuga reprehenderit esse consequuntur dolorum dicta odit nemo voluptates corrupti temporibus in amet quam tempora qui harum quis et.</p>
+                            <h3>Formation Socle Développement Web</h3>
+                            <p>Apprentissage des fondations de la programmation web:
+                            <ul>
+                                <li>HTML, CSS, JS, PHP, SQL, Git</li>
+                                <li>Programmation Orientée Objet, Architecture MVC</li>
+                                <li>API, AJAX</li>
+                            </ul>
+                            </p>
                         </div>
                     </div>
                     <div class="entry">
                         <div class="entry__title">
-                            <h3>Organisme de Formation</h3>
-                            <p>Date</p>
+                            <h3>NEOMA Business School, Rouen</h3>
+                            <p>2007 - 2011</p>
                         </div>
                         <div class="entry__description">
-                            <h3>Diplôme/Intitulé Formation</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, tempore cupiditate fuga reprehenderit esse consequuntur dolorum dicta odit nemo voluptates corrupti temporibus in amet quam tempora qui harum quis et.</p>
+                            <h3>Bachelor Of Science in International Business</h3>
+                            <ul>
+                                <li>Management, Commerce international, Marketing, Communication, Gestion</li>
+                                <li>University of Richmond, Etats-Unis (programme d'échange d'un an)</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -113,22 +130,31 @@
                     <h2>Expériences Profesionnelles</h2>
                         <div class="entry">
                             <div class="entry__title">
-                                <h3>Company Name</h3>
-                                <p>Date</p>
+                                <h3>Leadinside</h3>
+                                <p>St Ouen L'Aumône, France</p>
+                                <p>octobre 2020 - avril 2021</p>
+                                <p>juin 2019 - janvier 2020</p>
                             </div>
                             <div class="entry__description">
-                                <h3>Intitulé du poste</h3>
-                                <p>Description</p>
+                                <h3>Préparateur de commandes</h3>
+                                <p>Missions en continu chez STACI, leader en logistique publi-promotionnelle (PLV, matériel promotionnel, etc.)</p>
+                                <ul>
+                                    <li>Etaler et référencer les produits</li>
+                                    <li>Contrôler et valider les commandes</li>
+                                    <li>Gérer une équipe d'intérimaires</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="entry">
                             <div class="entry__title">
-                                <h3>Company Name</h3>
-                                <p>Date</p>
+                                <h3>Base and Nomads Backpackers</h3>
+                                <p>Airlie Beach, Australie</p>
+                                <p>Juin 2016 - Avril 2018</p>
                             </div>
                             <div class="entry__description">
-                                <h3>Intitulé du poste</h3>
-                                <p>Description</p>
+                                <h3>Assistant Responsable de l'hébergement</h3>
+                                <p>Resonsable de l'entretien ménager</p>
+                                
                             </div>
                         </div>
                         <div class="entry">
@@ -148,7 +174,6 @@
         <footer>
         
         </footer>
-    </div>
     </div>
     
 </body>

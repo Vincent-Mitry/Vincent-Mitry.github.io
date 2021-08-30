@@ -12,17 +12,22 @@ html {
     padding: 1rem;
 }
 
-.left-content,
+.left-content {
+    padding: 1.2rem;
+    padding-top: 2.5rem;
+}
+
 .right-content {
     padding: 2rem;
 }
-
 
 .left-content {
     width: 30%;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    align-items:center;
+    text-align: center;
 }
 
 .right-content {
@@ -30,7 +35,7 @@ html {
 }
 
 header {
-    margin: 2rem 0 3rem;
+    padding: 2rem 0 3.8rem;
 }
 
 section {
@@ -38,7 +43,7 @@ section {
 }
 
 .bloc-photo {
-    max-width: 30vh;
+    max-width: 10rem;
     display: block;
     margin: auto;
     clip-path: circle(44% at 50% 42%);
@@ -46,6 +51,7 @@ section {
 
 .entry {
     display: flex;
+    padding-bottom: .5rem;
 }
 
 .entry__title {
@@ -96,10 +102,6 @@ h3 {
     margin-bottom: 0;
 }
 
-.entry__description h3 {
-    text-transform: uppercase;
-}
-
 p {
     text-align: justify;
     margin-bottom: 0;
@@ -109,21 +111,57 @@ ul {
     padding-left: 0;
 }
 
-li {
+.left-content li {
     list-style-type: none;
 }
 
-@media (max-width: 360px) {
+.right-content li {
+    list-style-position: inside;
+}
+
+i {
+    font-size:20px;
+}
+
+label {
+    text-align: left;
+}
+
+/*------------------------------------------*/
+/*          MEDIA QUERIES RESPONSIVE        */     
+/*------------------------------------------*/
+
+@media (max-width: 375px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .entry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entry__title {
+        width: 100%;
+    }
+
+    .entry__description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
     
     .wrapper {
         display: flex;
         flex-direction: column;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .left-content,
     .right-content {
-        padding: 1rem;
+        padding: 0;
     }
 
     .right-content {
@@ -136,28 +174,48 @@ li {
         background-color: aliceblue;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contact {
+        order: 1;
     }
 
     .bloc-photo {
        display: none;
     }
+
+    header {
+        background-color: aliceblue;
+        padding: 0.5rem;
+    }
+
+    main section {
+        padding: 0.5rem;
+    }
 }
 
-@media (min-width: 360px) and (max-width: 599px){
+/* Positionnement du titre "Profil" (contenu de droite) pour qu'il soit à la même hauteur que le titre "A propos" (contenu de gauche) */
+@media (min-width: 768px) and (max-width: 785px) {
     
+    main {
+      position: relative;
+      top: -1.4rem;
+    }
 }
 
-@media (min-width: 600px) and (max-width: 899px){
-    
+@media (min-width: 1428px) {
+
+    main {
+        position: relative;
+        top: 1.45rem;
+      }
 }
 
-@media (min-width: 900px) and (max-width: 1199px){
-    
-}
 
-@media (min-width: 1200px){
-    
-}
+
+
 
 
 
