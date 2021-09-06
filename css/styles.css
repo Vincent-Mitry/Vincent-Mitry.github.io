@@ -10,6 +10,7 @@ html {
 .wrapper {
     display: flex;
     padding: 1rem;
+    position: relative;
 }
 
 .left-content {
@@ -40,7 +41,22 @@ header {
 }
 
 section {
-    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.left-content section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section photo */
+.photo {
+    padding-bottom: 1rem;
 }
 
 .bloc-photo {
@@ -50,9 +66,35 @@ section {
     clip-path: circle(44% at 50% 42%);
 }
 
+#contact li {
+    display: flex;
+}
+
+#contact i {
+    margin-right: 1.25rem;
+}
+
+#license {
+    margin-left: -0.25rem;
+}
+
+#license p {
+    margin-left: -0.25rem;
+}
+
+#assets li,
+#hobbies li {
+    padding-bottom: 0.2rem;
+}
+
 .entry {
     display: flex;
     padding-bottom: .5rem;
+}
+
+/* Ajout d'un padding sur le dernier élément pour espacer le footer (footer en position absolute)*/
+.entry:last-of-type {
+    padding-bottom: 5rem;
 }
 
 .entry__title {
@@ -65,8 +107,12 @@ section {
 }
 
 footer {
-    text-align: right;
+    /* text-align: right; */
     padding-top: 2.5rem;
+    position: absolute;
+    bottom: 1%;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 /*------------------------------------------*/
@@ -207,6 +253,18 @@ footer i {
 
     main section {
         padding: 0.5rem;
+    }
+    /* Annulation du padding de dernier élément en mode petit écran */
+    .entry:last-of-type {
+        padding-bottom: 0.5rem;
+    }
+
+    footer {
+        padding-top: 2.5rem;
+        position: relative;
+        bottom: unset;
+        right: unset;
+        transform: unset;
     }
 }
 
