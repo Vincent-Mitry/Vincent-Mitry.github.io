@@ -1,6 +1,11 @@
+
+
 html {
     font-size: 16px;
-    font-family:'MS Serif', 'New York', sans-serif;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*------------------------------------------*/
@@ -9,23 +14,19 @@ html {
 
 .wrapper {
     display: flex;
-    padding: 1rem;
     position: relative;
-}
-
-.left-content {
-    padding: 1.2rem;
-    padding-top: 2.5rem;
-}
-
-.right-content {
-    padding: 2rem;
-    padding-bottom: 0.5rem;
 }
 
 .left-content {
     width: 30%;
     background-color: aliceblue;
+    padding: 3rem 0;
+    
+}
+
+.left-wrapper {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -36,8 +37,24 @@ html {
     width: 70%;
 }
 
+.header-wrapper {
+    padding: 4.15rem 0;
+    background-color: white;
+}
+
 header {
-    padding: 2rem 0 3.8rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-wrapper {
+    background-color: white;
+    padding-top: 1rem;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
 }
 
 section {
@@ -56,7 +73,7 @@ ul {
 
 /* Section photo */
 .photo {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .bloc-photo {
@@ -110,7 +127,7 @@ footer {
     /* text-align: right; */
     padding-top: 2.5rem;
     position: absolute;
-    bottom: 1%;
+    bottom: 0.25%;
     right: 50%;
     transform: translateX(50%);
 }
@@ -212,7 +229,6 @@ footer i {
     .wrapper {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
     }
 
     .left-content,
@@ -246,14 +262,11 @@ footer i {
        display: none;
     }
 
-    header {
+    .header-wrapper {
         background-color: aliceblue;
-        padding: 0.5rem;
+        padding: 2rem 0;
     }
 
-    main section {
-        padding: 0.5rem;
-    }
     /* Annulation du padding de dernier élément en mode petit écran */
     .entry:last-of-type {
         padding-bottom: 0.5rem;
@@ -269,21 +282,14 @@ footer i {
 }
 
 /* Positionnement du titre "Profil" (contenu de droite) pour qu'il soit à la même hauteur que le titre "A propos" (contenu de gauche) */
-@media (min-width: 768px) and (max-width: 785px) {
-    
-    main {
-      position: relative;
-      top: -1.4rem;
+
+
+@media (min-width: 1438px) {
+
+    .header-wrapper {
+        padding: 4.875rem 0;
     }
-}
-
-@media (min-width: 1428px) {
-
-    main {
-        position: relative;
-        top: 1.45rem;
-      }
-}
+} 
 
 
 
