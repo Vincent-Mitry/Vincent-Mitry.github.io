@@ -140,6 +140,37 @@ footer {
 }
 
 /*------------------------------------------*/
+/*          MISE EN FORME TITRE H2          */
+/*------------------------------------------*/
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h2:before,
+h2:after {
+    background-color: #6E358C;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/*------------------------------------------*/
 /*          MISE EN FORME BOUTONS           */
 /*------------------------------------------*/
 
