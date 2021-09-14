@@ -189,8 +189,12 @@ h2:after {
 
 .btn:hover {
     opacity: .9;
+    transition: 0.2s;
     text-decoration: none;
     color: white;
+    transform: translateY(-0.1em);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 /*------------------------------------------*/
@@ -200,19 +204,25 @@ h2:after {
 .language {
     display: flex;
     flex-direction: column;
+    width: 180px;
 }
 
-label {
+.progress-bar {
+    width: 100%;
+    height: 18px;
+    background-color: white;
+    padding: 3px 0px 3px 3px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
     display: block;
-    margin-bottom: 0;
-}
+    height: 100%;
+    background-color: #6E358C;
+    border-radius: 3px;
 
-/* Modèle de style pour la progress bar/*
-/* https://bestjquery.com/tutorial/progress-bar/demo72/ */
 
-progress {
-    height: 1.5rem;
-    /* background-color: blue; */
 }
 
 /*------------------------------------------*/
@@ -259,6 +269,27 @@ label {
 
 footer i {
     font-size: 0.8rem;
+}
+
+#skills {
+    font-weight: bold;
+}
+
+#skills li:hover {
+    color: #6E358C;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+#extra {
+    font-size: 0.8rem;
+}
+
+#assets li:hover,
+#hobbies li:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /*------------------------------------------*/
@@ -345,7 +376,7 @@ footer i {
 /* Positionnement du titre "Profil" (contenu de droite) pour qu'il soit à la même hauteur que le titre "A propos" (contenu de gauche) */
 
 
-@media (min-width: 1226px) {
+@media (min-width: 1231px) {
 
     .header-wrapper {
         padding: 4.875rem 0;
