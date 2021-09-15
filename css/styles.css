@@ -143,14 +143,14 @@ footer {
 /*          MISE EN FORME TITRE H2          */
 /*------------------------------------------*/
 
-h2 {
+.title-main {
     overflow: hidden;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-h2:before,
-h2:after {
+.title-main:before,
+.title-main:after {
     background-color: #6E358C;
     content: "";
     display: inline-block;
@@ -160,12 +160,12 @@ h2:after {
     width: 50%;
 }
 
-h2:before {
+.title-main:before {
     right: 0.5em;
     margin-left: -50%;
 }
 
-h2:after {
+.title-main:after {
     left: 0.5em;
     margin-right: -50%;
 }
