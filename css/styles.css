@@ -105,7 +105,7 @@ ul {
 }
 
 #contact i {
-    margin-right: 1.25rem;
+    margin-right: 0.5rem;
 }
 
 #license {
@@ -124,7 +124,7 @@ ul {
 #skills {
     display: flex;
     justify-content: center;
-    column-gap: 25%;
+    column-gap: 15%;
     font-weight: bold;
 }
 
