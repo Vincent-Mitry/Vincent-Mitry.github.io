@@ -123,11 +123,24 @@ ul {
 
 #skills {
     display: flex;
+    justify-content: center;
+    column-gap: 25%;
+    font-weight: bold;
+}
+
+#skills li:hover {
+    color: #6E358C;
+    transition: 0.5s;
 }
 
 #technos,
 #tools {
     width: 50%;
+}
+
+#technos,
+#tools li {
+    white-space: nowrap;    
 }
 
 footer {
@@ -183,7 +196,7 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 100px;
-    padding: .5em 1em;
+    padding: .25em .75em;
     margin: 0.5rem;
 }
 
@@ -269,16 +282,6 @@ label {
 
 footer i {
     font-size: 0.8rem;
-}
-
-#skills {
-    font-weight: bold;
-}
-
-#skills li:hover {
-    color: #6E358C;
-    font-size: 1.2rem;
-    transition: 0.5s;
 }
 
 #extra {
