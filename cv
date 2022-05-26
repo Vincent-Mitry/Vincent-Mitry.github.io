@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Vincent Mitry</title>
     <link rel="shortcut icon" type="image/png" href="media/favicon.png"/>
-    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="assets/css/cv/reboot.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/cv/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
-    <script defer src="js/footer.js"></script>
+    <script defer src="assets/js/footer-cv.js"></script>
 </head>
 <body>
 
@@ -240,7 +240,7 @@
                 </main>
 
                 <footer id="footer">
-                    <i class="far fa-copyright"> Site CV réalisé par Vincent Mitry - 2021</i>
+                    <i class="far fa-copyright"> Mon CV en HTML/CSS - 2022</i>
                 </footer>
             </div>
         </div>
