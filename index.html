@@ -1,249 +1,288 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>Mon site Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Vincent Mitry</title>
-    <link rel="shortcut icon" type="image/png" href="media/favicon.png"/>
-    <link rel="stylesheet" href="css/reboot.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>  
     
-    <script defer src="js/footer.js"></script>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
 <body>
-
-    <div class="wrapper">
-        <div class="left-content">
-            <div class="left-wrapper" >
-                <section class="photo">
-                    <div class="bloc-photo">
-                        <img src="media/photo-profil.jpg" alt="photo de profil" >
-                    </div>
-                </section>
-                <section id="contact">
-                    <h2>à propos</h2>
-                    <ul>
-                        <li><i class="fas fa-calendar-day"></i>10/02/1989</li>
-                        <li><i class="fa fa-phone"></i>+ 33 6 75 70 86 33</li>
-                        <li><i class="fas fa-at"></i>vinz.mitry@gmail.com</li>
-                        <li><a href="https://www.linkedin.com/in/vincent-mitry/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
-                        <li><a href="https://github.com/Vincent-Mitry" target="_blank" rel="noopener"><i class="fab fa-github"></i>Github</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i>78100 - St Germain En Laye</li>
-                        <li id="license"><i class="fas fa-address-card"></i>Permis B</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Compétences</h2>
-                    <div id="skills">
-                        <ul id="technos">
-                            <li>HTML - CSS</li>
-                            <li>PHP</li>
-                            <li>Symfony</li>
-                            <li>MySQL</li>
-                            <li>Javascript</li>
-                            </ul>
-                        <ul id="tools">
-                            <li>Linux</li>
-                            <li>VS Code</li>
-                            <li>GIT - Githbub</li>
-                            <li>Adminer</li>
-                            <li>Trello</li>
-                        </ul>
-                    </div>
-                </section>
-                <section>
-                    <h2>Langues</h2>
-                    <div class="language">
-                        <p>Anglais</p>
-                        <div class="progress-bar">
-                            <span class="progress-bar-fill" style="width: 90%;"></span>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <p>Espagnol</p>
-                        <div class="progress-bar">
-                            <span class="progress-bar-fill" style="width: 95%;"></span>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <p>Allemand</p>
-                        <div class="progress-bar">
-                            <span class="progress-bar-fill" style="width: 20%;"></span>
-                        </div>
-                    </div>
-                </section>
-                <section id="assets">
-                    <h2>Atouts</h2>
-                    <ul>
-                        <li>Adaptation dans des environnements pluridisciplinaires</li>
-                        <li>Bonnes aptitudes relationnelles, travail en équipe</li>
-                        <li>Capacité de recherche et résolution de problèmes</li>
-                        <li>Autodiscipline et sens de l'organisation</li>
-                        <li>Capacité d'écoute active</li>
-                    </ul>
-                </section>
-                <section id="hobbies">
-                    <h2>Centres d'intérêt</h2>
-                    <ul>
-                        <li>Sport: fitness, boxe, basketball</li>
-                        <li>Pratique de la guitare</li>
-                        <li>Voyages et longs séjours à l'étranger</li>
-                        <li>Méditation</li>
-                    </ul>
-                </section>
-            </div> 
-        </div>
-
-        <div class="right-content">
-            <div class="header-wrapper">
-                <header>
-                    <h1>Vincent Mitry</h1>
-                    <p class="job-title">Développeur Web PHP Symfony</p>
-                </header>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" />
+		            <div class="profile-content">
+		                <h1 class="name">Vincent Mitry</h1>
+		                <h2 class="desc">Développeur Web PHP Symfony</h2>   
+		                <ul class="social list-inline">
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/vincent-mitry/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/Vincent-Mitry" target="_blank" rel="noopener"><i class="fab fa-github-alt"></i></a></li>               
+		                    <li class="list-inline-item"><a href="https://gitlab.com/Vincent-Mitry" target="_blank" rel="noopener"><i class="fab fa-gitlab"></i></a></li>               
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->        
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="text-center text-white">
+        <section class="section">
+            <div class="p-2 shadow-sm rounded bg-dark bg-gradient">
+                <p class="mb-0 fw-bold"><i class="fas fa-exclamation-triangle"></i> Site en construction | Dernière MAJ : 29/05/2022 | Prochaine MAJ : 05/06/2022 <i class="fas fa-exclamation-triangle"></i></p>
             </div>
-            <div class="main-wrapper">
-                <main>
-                    <section>
-                        <h2 class="title-main">Profil</h2>
-                        <p>Ma double formation, école de commerce et développeur web me permet d'envisager une insertion rapide dans les entreprises et organisations. Mes formations chez O'Clock ainsi que mes projets personnels m'ont permis d'acquérir des bases solides en programmation web.</p>
-                    </section>
-
-                    <section id="education">
-                        <h2 class="title-main">Formation</h2>
-                        <div class="entry">
-                            <div class="entry__title">
-                                <h3>O'Clock</h3>
-                                <p>Avril - Juillet 2022</p>
-                            </div>
-                            <div class="entry__description">
-                                <h3>Formation Spécialisation Symfony</h3>
-                                <p>Ecole de Développement Web</p>
-                                <ul>
-                                    <li>Préparation au Titre Professionnel RNCP "Développeur Web et Web Mobile"</li>
-                                    <li>Certification Opquast</li>
-                                </ul>
-                                <a href="https://oclock.io/formations/developpeur-symfony#programme" target="_blank" rel="noopener" class="btn">Voir programme</a>
-                            </div>
-                        </div>
-                        <div class="entry">
-                            <div class="entry__title">
-                                <h3>O'Clock</h3>
-                                <p>Mai - Aout 2021</p>
-                            </div>
-                            <div class="entry__description">
-                                <h3>Formation Socle Développement Web</h3>
-                                <p>Ecole de Développement Web</p>
-                                <a href="https://oclock.io/formations/socle-developpement-web#programme" target="_blank" rel="noopener" class="btn">Voir programme</a>
-                            </div>
-                        </div>
-                        <div class="entry">
-                            <div class="entry__title">
-                                <h3>NEOMA Business School, Rouen</h3>
-                                <p>2007 - 2011</p>
-                            </div>
-                            <div class="entry__description">
-                                <h3>Bachelor Of Science in International Business</h3>
-                                <ul>
-                                    <li>Management, Commerce international, Marketing, Communication, Gestion</li>
-                                    <li>University of Richmond, Etats-Unis (programme d'échange d'un an)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="work">
-                        <h2 class="title-main">Expériences Professionnelles</h2>
-                            <div class="entry">
-                                <div class="entry__title">
-                                    <h3>Staci</h3>
-                                    <p>St Ouen L'Aumône, France</p>
-                                    <p>Octobre 2020 - Avril 2021</p>
-                                    <p>Juin 2019 - Janvier 2020</p>
-                                </div>
-                                <div class="entry__description">
-                                    <h3>Responsable d'équipe en logistique</h3>
-                                    <p>Leader en logistique publi-promotionnelle (PLV, matériel promotionnel, etc.)</p>
-                                </div>
-                            </div>
-                            <div class="entry">
-                                <div class="entry__title">
-                                    <h3>Base Airlie Beach Resort</h3>
-                                    <p>Airlie Beach, Australie</p>
-                                    <p>Juin 2016 - Avril 2018</p>
-                                </div>
-                                <div class="entry__description">
-                                    <h3>Assistant Responsable de l'hébergement</h3>
-                                    <p>Chaîne d'hôtel australienne</p>
-                                    <ul>
-                                        <li>Gestion, recrutement et formation d'une équipe de 20 personnes</li>
-                                        <li>Accueil et réservations</li>
-                                        <li>Assurance qualité du service au client</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="entry">
-                                <div class="entry__title">
-                                    <h3>Staci</h3>
-                                    <p>St Ouen L'Aumône, France</p>
-                                    <p>Juin 2013 - Décembre 2015</p>
-                                </div>
-                                <div class="entry__description">
-                                    <h3>Préparateur de commandes en logistique</h3>
-                                    <p>Leader en logistique publi-promotionnelle (PLV, matériel promotionnel, etc.)</p>
-                                </div>
-                            </div>
-                            <div class="entry">
-                                <div class="entry__title">
-                                    <h3>Société FMI</h3>
-                                    <p>Paris, France</p>
-                                    <p>Novembre 2011 - Mai 2013</p>
-                                </div>
-                                <div class="entry__description">
-                                    <h3>Suivi des commandes et gestion des stocks</h3>
-                                    <p>Importateur et distributeur de montures de lunettes</p>
-                                </div>
-                            </div>
-                            <div class="entry">
-                                <div class="entry__title">
-                                    <h3>Groupama</h3>
-                                    <p>Madrid, Espagne</p>
-                                    <p>Juin 2010 - Novembre 2010</p>
-                                </div>
-                                <div class="entry__description">
-                                    <h3>Stage: Assistant Contrôle de Gestion</h3>
-                                    <ul>
-                                        <li>Reporting quotidien</li>
-                                        <li>Analyse et interprétation des données</li>
-                                        <li>Rapport de Stage: Étude de marché comparative sur les produits d'assurances</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="entry">
-                                <div class="entry__title">
-                                    <h3>Seire Products</h3>
-                                    <p>Madrid, Espagne</p>
-                                    <p>Juin 2008 - Juillet 2008</p>
-                                </div>
-                                <div class="entry__description">
-                                    <h3>Stage: Assistant Commercial</h3>
-                                    <p>Entreprise spécialisée dans la vente de produits pour revêtements de sols</p>
-                                    <ul>
-                                        <li>Etude de Marché</li>
-                                        <li>Démarchage de clientèle</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    </section>
-                </main>
-
-                <footer id="footer">
-                    <i class="far fa-copyright"> Site CV réalisé par Vincent Mitry - 2021</i>
-                </footer>
-            </div>
-        </div>
+        </section>
     </div>
+
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+    
+            <div class="primary col-lg-8 col-12">
+
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Présentation</h2>
+                        <div class="content">
+                            <p>Mon histoire familiale et personnelle m'a amené à cotoyer et travailler avec des hommes et des femmes de différentes cultures. Je met mes capacités d'écoute et mes connaissances du monde des entreprises au service du client et m'appuie sur mes nouvelles compétences techniques pour délivrer les produits attendus.</p>
+                            <p>Mes motivations : enrichissement de mon apprentissage, résolution de problèmes, défis à relever et insertion dans le monde professionnel du développement web.</p> 
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <!-- ==== PORTFOLIO ==== -->
+                <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Mes Projets</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                <div class="featured-image">
+                                    <a href="portfolio/projet-sans-faim">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/sans-faim.png" alt="project name" />
+                                    </a>
+                                </div>
+                                
+                                <h3 class="title mb-3">
+                                    <a href="portfolio/projet-sans-faim">Projet Perso Sans Faim : distribution de produits apéritifs en conserve</a>
+                                </h3>
+
+                                <div class="desc text-start">                                    
+                                    <p class="mb-3">L'objectif principal du site est de présenter les produits afin que les entreprises intéressées puissent contacter la marque. Il s'agit également de faire connaître les produits au consommateurs finaux en leur indiquant les différents points de ventes et en proposant des recettes. Le site comprend une interface d'administration qui permet de gérer le contenu (gestion des produits, des utilisateurs, etc.).</p>
+
+                                <!-- links -->
+                                <div class="d-flex gap-5 justify-content-center mb-4">
+                                    <a class="more-link btn btn-sm disabled p-0" href="#" target="_blank" rel="noopener"><i class="fab fa-gitlab"></i>Dépôt Gitlab <span class="small">(bientôt disponible)</span></a>
+                                </div>
+                                <!-- Tags -->
+                                <div class="d-flex justify-content-end gap-1">
+                                    <span class="badge badge-theme">PHP</span>
+                                    <span class="badge badge-theme">Symfony</span>
+                                    <span class="badge badge-theme">Javascript</span>
+                                    <span class="badge badge-theme">HTML-CSS</span>
+                                    <span class="badge badge-theme">SQL-DQL</span>
+                                </div>
+                                </div><!--//desc-->
+                                
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="portfolio/api-dictionary">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/api-dictionary.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="portfolio/api-dictionary">Api Dictionary</a></h3>
+                                    <p class="mb-2">Afficher la ou les définitions du mot saisi dans la barre de recherche à l'aide de l'API <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">Free Dictionary API</a></p>
+                                    <!-- links -->
+                                    <div class="d-flex gap-4 mb-3">
+                                        <a class="more-link btn btn-sm disabled p-0" href="#" target="_blank" rel="noopener"><i class="fab fa-github-alt"></i>Dépôt Github <span class="small">(bientôt disponible)</span></a>
+                                    </div>
+                                    <!-- tags -->
+                                    <div class="d-flex justify-content-end gap-1">       
+                                        <span class="badge badge-theme">Javascript</span>
+                                        <span class="badge badge-theme">HTML-CSS</span>
+                                    </div>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Projets en cours</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="#">L'apothéose !</a></h3>
+                                <ul class="summary list-unstyled">
+                                    <li><span class="fw-bold">Projet de fin de formation chez O'Clock &#x2192</span> Pendant 1 mois, on élabore un projet dans les conditions d'un développeur web en entreprise.</li>
+                                    <li><span class="fw-bold">Présentation du projet &#x2192</span> Fin Juin / Début Juillet <span class="fw-bold">en direct sur Youtube</span>. <a class="more-link ms-3 btn btn-sm disabled" href="#"><i class="fas fa-external-link-alt"></i>Lien à venir</a></li>
+                                    
+                                </ul>
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <!-- ==== PORTFOLIO ==== -->
+
+            </div><!--//primary-->
+
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Saint-Germain-En-Laye, FRANCE</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span>vinz.mitry@gmail.com</li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="cv" target="_blank">Mon CV en HTML/CSS</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">Spécialisation Backend en PHP/Symfony</p>
+                                
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">PHP, Symfony<span class="level-label"></span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="75"></div>
+									</div><!--//level-bar-->                               
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript<span class="level-label"></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 60%" aria-valuenow="60"  aria-valuemin="0" aria-valuemax="60"></div>
+									</div><!--//level-bar-->                                   
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, Bootstrap<span class="level-label"></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="70"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">SQL, DQL<span class="level-label"></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="65"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <!-- Aside Témoignages à venir -->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Formations</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Développeur Web et Web Mobile</h3>
+                                <h4 class="university">Ecole O'Clock <span class="year">(2021-2022)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc In International Business</h3>
+                                <h4 class="university">Neoma Business School <span class="year">(2007-2011)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Langues</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Français</strong></span>
+                                    <span class="level"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Anglais</strong></span>
+                                    <span class="level"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Espagnol</strong></span>
+                                    <span class="level"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <p class="mb-0 h5">Mon Site Portfolio - Vincent Mitry - 2022</p>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-</html>
+</html> 
+

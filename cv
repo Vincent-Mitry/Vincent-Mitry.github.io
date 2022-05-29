@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en HTML/CSS</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="assets/css/cv/reboot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/cv/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <script defer src="assets/js/footer-cv.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="left-content">
+            <div class="left-wrapper" >
+                <section class="photo">
+                    <div class="bloc-photo">
+                        <img src="assets/images/photo-profil.jpg" alt="photo de profil" >
+                    </div>
+                </section>
+                <section id="contact">
+                    <h2>à propos</h2>
+                    <ul>
+                        <li><i class="fas fa-calendar-day"></i>10/02/1989</li>
+                        <li><i class="fa fa-phone"></i>+ 33 6 75 70 86 33</li>
+                        <li><i class="fas fa-at"></i>vinz.mitry@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/vincent-mitry/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                        <li><a href="https://github.com/Vincent-Mitry" target="_blank" rel="noopener"><i class="fab fa-github"></i>Github</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>78100 - St Germain En Laye</li>
+                        <li id="license"><i class="fas fa-address-card"></i>Permis B</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Compétences</h2>
+                    <div id="skills">
+                        <ul id="technos">
+                            <li>HTML - CSS</li>
+                            <li>PHP</li>
+                            <li>Symfony</li>
+                            <li>MySQL</li>
+                            <li>Javascript</li>
+                            </ul>
+                        <ul id="tools">
+                            <li>Linux</li>
+                            <li>VS Code</li>
+                            <li>GIT - Githbub</li>
+                            <li>Adminer</li>
+                            <li>Trello</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>Langues</h2>
+                    <div class="language">
+                        <p>Anglais</p>
+                        <div class="progress-bar">
+                            <span class="progress-bar-fill" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <p>Espagnol</p>
+                        <div class="progress-bar">
+                            <span class="progress-bar-fill" style="width: 95%;"></span>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <p>Allemand</p>
+                        <div class="progress-bar">
+                            <span class="progress-bar-fill" style="width: 20%;"></span>
+                        </div>
+                    </div>
+                </section>
+                <section id="assets">
+                    <h2>Atouts</h2>
+                    <ul>
+                        <li>Adaptation dans des environnements pluridisciplinaires</li>
+                        <li>Bonnes aptitudes relationnelles, travail en équipe</li>
+                        <li>Capacité de recherche et résolution de problèmes</li>
+                        <li>Autodiscipline et sens de l'organisation</li>
+                        <li>Capacité d'écoute active</li>
+                    </ul>
+                </section>
+                <section id="hobbies">
+                    <h2>Centres d'intérêt</h2>
+                    <ul>
+                        <li>Sport: fitness, boxe, basketball</li>
+                        <li>Pratique de la guitare</li>
+                        <li>Voyages et longs séjours à l'étranger</li>
+                        <li>Méditation</li>
+                    </ul>
+                </section>
+            </div> 
+        </div>
+
+        <div class="right-content">
+            <div class="header-wrapper">
+                <header>
+                    <h1>Vincent Mitry</h1>
+                    <p class="job-title">Développeur Web PHP Symfony</p>
+                </header>
+            </div>
+            <div class="main-wrapper">
+                <main>
+                    <section>
+                        <h2 class="title-main">Profil</h2>
+                        <p>Ma double formation, école de commerce et développeur web favorise une insertion rapide dans les entreprises et organisations. Mes formations chez O'Clock et mes projets personnels m'ont permis d'acquérir des bases solides en programmation web.</p>
+                    </section>
+
+                    <section id="education">
+                        <h2 class="title-main">Formation</h2>
+                        <div class="entry">
+                            <div class="entry__title">
+                                <h3>O'Clock</h3>
+                                <p>Avril - Juillet 2022</p>
+                            </div>
+                            <div class="entry__description">
+                                <h3>Formation Spécialisation Symfony</h3>
+                                <p>Ecole de Développement Web</p>
+                                <ul>
+                                    <li>Préparation au Titre Professionnel RNCP "Développeur Web et Web Mobile"</li>
+                                    <li>Certification Opquast</li>
+                                </ul>
+                                <a href="https://oclock.io/formations/developpeur-symfony#programme" target="_blank" rel="noopener" class="btn">Voir programme</a>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="entry__title">
+                                <h3>O'Clock</h3>
+                                <p>Mai - Aout 2021</p>
+                            </div>
+                            <div class="entry__description">
+                                <h3>Formation Socle Développement Web</h3>
+                                <p>Ecole de Développement Web</p>
+                                <a href="https://oclock.io/formations/socle-developpement-web#programme" target="_blank" rel="noopener" class="btn">Voir programme</a>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="entry__title">
+                                <h3>NEOMA Business School, Rouen</h3>
+                                <p>2007 - 2011</p>
+                            </div>
+                            <div class="entry__description">
+                                <h3>Bachelor Of Science in International Business</h3>
+                                <ul>
+                                    <li>Management, Commerce international, Marketing, Communication, Gestion</li>
+                                    <li>University of Richmond, Etats-Unis (programme d'échange d'un an)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="work">
+                        <h2 class="title-main">Expériences Professionnelles</h2>
+                            <div class="entry">
+                                <div class="entry__title">
+                                    <h3>Staci</h3>
+                                    <p>St Ouen L'Aumône, France</p>
+                                    <p>Octobre 2020 - Avril 2021</p>
+                                    <p>Juin 2019 - Janvier 2020</p>
+                                </div>
+                                <div class="entry__description">
+                                    <h3>Responsable d'équipe en logistique</h3>
+                                    <p>Leader en logistique publi-promotionnelle (PLV, matériel promotionnel, etc.)</p>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry__title">
+                                    <h3>Base Airlie Beach Resort</h3>
+                                    <p>Airlie Beach, Australie</p>
+                                    <p>Juin 2016 - Avril 2018</p>
+                                </div>
+                                <div class="entry__description">
+                                    <h3>Assistant Responsable de l'hébergement</h3>
+                                    <p>Chaîne d'hôtel australienne</p>
+                                    <ul>
+                                        <li>Gestion, recrutement et formation d'une équipe de 20 personnes</li>
+                                        <li>Accueil et réservations</li>
+                                        <li>Assurance qualité du service au client</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry__title">
+                                    <h3>Staci</h3>
+                                    <p>St Ouen L'Aumône, France</p>
+                                    <p>Juin 2013 - Décembre 2015</p>
+                                </div>
+                                <div class="entry__description">
+                                    <h3>Préparateur de commandes en logistique</h3>
+                                    <p>Leader en logistique publi-promotionnelle (PLV, matériel promotionnel, etc.)</p>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry__title">
+                                    <h3>Société FMI</h3>
+                                    <p>Paris, France</p>
+                                    <p>Novembre 2011 - Mai 2013</p>
+                                </div>
+                                <div class="entry__description">
+                                    <h3>Suivi des commandes et gestion des stocks</h3>
+                                    <p>Importateur et distributeur de montures de lunettes</p>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry__title">
+                                    <h3>Groupama</h3>
+                                    <p>Madrid, Espagne</p>
+                                    <p>Juin 2010 - Novembre 2010</p>
+                                </div>
+                                <div class="entry__description">
+                                    <h3>Stage: Assistant Contrôle de Gestion</h3>
+                                    <ul>
+                                        <li>Reporting quotidien</li>
+                                        <li>Analyse et interprétation des données</li>
+                                        <li>Rapport de Stage: Étude de marché comparative sur les produits d'assurances</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry__title">
+                                    <h3>Seire Products</h3>
+                                    <p>Madrid, Espagne</p>
+                                    <p>Juin 2008 - Juillet 2008</p>
+                                </div>
+                                <div class="entry__description">
+                                    <h3>Stage: Assistant Commercial</h3>
+                                    <p>Entreprise spécialisée dans la vente de produits pour revêtements de sols</p>
+                                    <ul>
+                                        <li>Etude de Marché</li>
+                                        <li>Démarchage de clientèle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </section>
+                </main>
+
+                <footer id="footer">
+                    <i class="far fa-copyright"> Mon CV en HTML/CSS - 2022</i>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
