@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projet Sans Faim - Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" type="image/png" href="../../favicon.png"/> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="../../assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="../../assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="../../assets/plugins/github-activity/src/github-activity.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/styles.css">
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="../../assets/images/profile.png" alt="profile image" />
+		            <div class="profile-content">
+		                <h1 class="name">Vincent Mitry</h1>
+		                <h2 class="desc">Développeur Web PHP Symfony</h2>   
+		                <ul class="social list-inline">
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/vincent-mitry/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/Vincent-Mitry" target="_blank" rel="noopener"><i class="fab fa-github-alt"></i></a></li>               
+		                    <li class="list-inline-item"><a href="https://gitlab.com/Vincent-Mitry" target="_blank" rel="noopener"><i class="fab fa-gitlab"></i></a></li>               
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->        
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="mb-3">
+                <a href="../../index.html"><i class="fas fa-home"></i> Retour à l'accueil</a>
+            </div>
+    
+            <div class="primary col-12">
+
+                <section class="section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Présentation du projet "Sans Faim"</h2>
+                        <div class="d-flex flex-wrap">
+                            <div class="featured-image mb-5 mb-lg-0 col-12 col-lg-6">
+                                <img class="img-fluid project-image rounded shadow-sm" src="../../assets/images/projects/sans-faim.png" alt="project name" />
+                            </div>
+                            <div class="content col-12 col-lg-6 p-lg-3 align-self-center">
+                                <p>"Sans Faim" est une marque (factice) de distribution de produits apéritifs en conserve (B2B). Ses clients sont principalement des épiceries fines, cavistes et restaurateurs. L'objectif principal du site est de présenter les produits afin que les entreprises intéressées puissent contacter la marque. Il s'agit également de faire connaître les produits au consommateurs finaux en leur indiquant les différents points de ventes et en proposant des recettes. Le site comprend une interface d'administration qui permet de gérer le contenu (gestion des produits, des utilisateurs, etc.).
+                                </p>
+                                <p>Dans le but de découvrir Symfony et coder une application côté "back", j'ai réalisé mon premier projet web "from scratch" en m'aidant et m'inspirant de contenus divers sur le web :</p>
+                                <ul class="mb-0">
+                                    <li>La documentation de <a href="https://symfony.com/doc/current/index.html" target="_blank" rel="noopener">Symfony</a></li>
+                                    <li>
+                                        Les différentes ressources publiées par <a href="https://yoandev.co/" target="_blank" rel="noopener">Yoan Dev</a>,
+                                        <a href="https://www.youtube.com/channel/UCS71mal_TkTW_PpZR9YLpIA" target="_blank" rel="noopener">Lior Chamla</a> et
+                                        <a href="https://nouvelle-techno.fr/" target="_blank" rel="noopener">Nouvelle Techno</a>.
+                                    </li>
+                                </ul>
+                            </div><!--//content-->
+                        </div>
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                <section class="section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Fonctionnalités principales</h2>
+
+                        <div class="d-flex flex-wrap">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4">Front Office</h3>
+                                <ul class="content mb-0">
+                                    <li>Affichage des produits par catégorie et saison <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/1"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Page du détail d'un produit <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/2"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a>
+                                        <ul>
+                                            <li>Affichage des informations du produit</li>
+                                            <li>Formulaire de notation</li>
+                                            <li>Affichage des commentaires</li>
+                                        </ul>
+                                    </li>
+                                    <li>Page d'une recette <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/3"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a>
+                                        <ul>
+                                            <li>Génération d'un PDF pour télécharger la recette</li>
+                                        </ul>
+                                    </li>
+                                    <li>Page qui-sommes-nous <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/4"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Formulaire de contact <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/5"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Formulaire de proposition de recette <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/6"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Affichage des points de vente sur une carte <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/front-office/7"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <h3 class="h4">Back-Office</h3>
+                                <ul class="content mb-0">
+                                    <li>Sécurité et Authentification <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/back-office/1"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a>
+                                        <ul>
+                                            <li>Formulaire de login</li>
+                                            <li>Mise en place des droits (super-admin, admin, manager, utilisateur)</li>
+                                            <li>Formulaire de génération d'un nouveau mot de passe par envoi de mail</li>
+                                            <li>Formulaire de modification de mot de passe</li>
+                                        </ul>
+                                    </li>         
+                                    <li>Gestion des produits <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/back-office/2"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Gestion des catégories / saisons</li>
+                                    <li>Gestion des recettes <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/back-office/3"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Possibilité de répondre à un commentaire <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/back-office/4"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Gestion des utilisateurs</li>
+                                    <li>Dashboard avec statistiques <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/back-office/5"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                    <li>Exportation de données au format CSV <a class="more-link btn btn-sm disabled p-0 ms-2" href="demos/back-office/6"><i class="fas fa-link"></i>Démo <span class="small">(bientôt disponible)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Environnement technique de développement</h2>
+                        <ul class="content mb-0">
+                            <li>VSCode</li>
+                            <li>Symfony 5</li>
+                            <li>Webpack Encore
+                                <ul>
+                                    <li>Installation d'un thème bootstrap</li>
+                                    <li>Compilations des assets</li>
+                                </ul>
+                            </li>
+                            <li>Docker
+                                <ul>
+                                    <li>Base de données, MySQL et phpMyAdmin</li>
+                                    <li>Envoi de mail avec MailCatcher</li>
+                                </ul>
+                            </li>
+                            <li>Gitlab CI
+                                <ul>
+                                    <li>Intégration continue, tests unitaires</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <p class="mb-0 h5">Mon Site Portfolio - Vincent Mitry - 2022</p>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+    <!-- Javascript -->          
+    <script type="text/javascript" src="../../assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../../assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="../../assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="../../assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="../../assets/js/main.js"></script>            
+</body>
+</html> 
