@@ -20,7 +20,7 @@
             <div class="left-wrapper" >
                 <section class="photo">
                     <div class="bloc-photo">
-                        <img src="media/photo-profil.jpg" alt="photo de profil" >
+                        <img src="assets/images/photo-profil.jpg" alt="photo de profil" >
                     </div>
                 </section>
                 <section id="contact">
