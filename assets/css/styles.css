@@ -60,14 +60,14 @@ a:focus {
 }
 
 .btn:focus, a.btn:focus {
-  color: #fff;
+  /* color: #fff; */
   box-shadow: none;
 }
 
 a.btn-cta-primary, .btn-cta-primary {
   background: #54ba4e;
   border: 1px solid #54ba4e;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -75,13 +75,13 @@ a.btn-cta-primary, .btn-cta-primary {
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
   background: #49ac43;
   border: 1px solid #49ac43;
-  color: #fff;
+  /* color: #fff; */
 }
 
 a.btn-cta-secondary, .btn-cta-secondary {
   background: #479FC8;
   border: 1px solid #479FC8;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -89,7 +89,7 @@ a.btn-cta-secondary, .btn-cta-secondary {
 a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
   background: #3893bd;
   border: 1px solid #3893bd;
-  color: #fff;
+  /* color: #fff; */
   box-shadow: none;
 }
 
