@@ -70,13 +70,51 @@
     <div class="container sections-wrapper py-4 py-md-5">
         <div class="row">
             <div class="d-flex justify-content-between">
-                <h1 class="mb-4 mb-md-5">Projet Passing ShO't</h1>
+                <h1 class="mb-4 mb-md-5">Projet Perso Api Dictionary</h1>
                 <a href="../../"><i class="fas fa-home"></i> Retour à l'accueil</a>
             </div>
     
-            <div class="primary col-12">
-                <p>Contenu bientôt disponible</p>
+            <section class="section">
+                <div class="section-inner shadow-sm rounded">
+                    <h2 class="heading">Présentation du projet</h2>
+                    <div class="d-flex flex-wrap">
+                        <div class="featured-image mb-5 mb-lg-0 col-12 col-lg-6">
+                            <img class="img-fluid project-image rounded shadow-sm" src="../../assets/images/projects/api-dictionary.png" alt="project name" />
+                        </div>
+                        <div class="content d-flex flex-column col-12 col-lg-6 p-lg-3">
+                            <div>
+
+                                <h3 class="h5">Contexte</h3>
+                                <p>J'ai réalisé ce projet afin de pratiquer l'AJAX et la méthode fetch en Javascript. J'ai utilisé l'API publique <a target="_blank" rel="noopener" href="https://dictionaryapi.dev/">Free Dictionary API</a>.</p>
+                                <h3 class="h5">Objectif</h3>
+                                <p>Afficher la ou les définitions du mot saisi dans la barre de recherche.</p>
+                            </div>
+                            <div class="d-flex mt-auto justify-content-around gap-4 mb-3">
+                                <button type="button" class="btn btn-sm p-0 ps-2" data-bs-toggle="modal" data-bs-target="#api-demo"><i class="fab fa-youtube"></i>Voir la démo</button>
+                                <a class="more-link btn btn-sm p-0" href="https://github.com/Vincent-Mitry/api-dictionary" target="_blank" rel="noopener"><i class="fab fa-github-alt"></i>Dépôt Github</a>
+                            </div>
+                        </div><!--//content-->
+                    </div>
+                </div><!--//section-inner-->                 
+            </section><!--//section-->
+        </div>
+    </div>
+
+    <!-- Modals Démos -->
+    <div class="modal fade" id="api-demo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Api Dictionary</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body d-flex justify-content-center">
+                <iframe width="845" height="480" src="https://www.youtube.com/embed/xmN7Wq7VsiQ" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
         </div>
     </div>
 
